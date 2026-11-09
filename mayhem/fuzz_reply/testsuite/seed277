@@ -1,0 +1,3 @@
+\$116
+id=3 addr=127.0.0.1:5000 laddr=127.0.0.1:6379 fd=8 name= age=1 idle=0 flags=N db=0 sub=0 psub=0 multi=-1 cmd=client
+

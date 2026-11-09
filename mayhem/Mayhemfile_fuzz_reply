@@ -1,0 +1,9 @@
+project: savantenvs/phpredis
+target: fuzz_reply
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_reply/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_reply
+    libfuzzer: true
+    timeout: 30

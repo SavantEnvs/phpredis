@@ -1,0 +1,8 @@
+build-fuzz/
+build-test/
+*.o
+*.a
+*.so
+.DS_Store
+*.swp
+*~

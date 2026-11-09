@@ -1,0 +1,9 @@
+project: savantenvs/phpredis
+target: fuzz_codec
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_codec/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_codec
+    libfuzzer: true
+    timeout: 30
