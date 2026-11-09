@@ -1,0 +1,10 @@
+# seed-from: https://app.mayhem.security/savantenvs/phpredis/fuzz-reply
+project: savantenvs/phpredis
+target: fuzz_reply-mined-806b7b3
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_reply-mined-806b7b3/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_reply
+    libfuzzer: true
+    timeout: 30
